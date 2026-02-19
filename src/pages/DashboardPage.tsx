@@ -102,20 +102,7 @@ export function DashboardPage() {
               </div>
             </Link>
 
-            {user?.role === 'admin' && (
-              <Link
-                to="/register"
-                className="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-all"
-              >
-                <div className="p-2 bg-blue-100 rounded-lg">
-                  <UserPlus className="w-6 h-6 text-blue-700" />
-                </div>
-                <div>
-                  <div className="text-gray-900">Register User</div>
-                  <div className="text-gray-500">Create student account</div>
-                </div>
-              </Link>
-            )}
+
 
             <Link
               to="/logs"
