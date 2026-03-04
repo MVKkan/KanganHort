@@ -1,7 +1,7 @@
 // C:/Users/kym/react-vite-Hort2.6/src/pages/plants/PlantPage.tsx
 import { SITE_NAME } from "../../config/site";
 import { useMemo } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams, useLocation } from "react-router-dom";
 import { Leaf, QrCode, ChevronLeft, ChevronRight } from "lucide-react";
 import { BackButton } from "../../components/BackButton";
 
@@ -67,11 +67,14 @@ function normalizePlantBio(p: PlantBio): PlantBio {
 function Field({
   label,
   value,
+  hideWhenQrEmpty = false,
 }: {
   label: string;
   value: string;
+  hideWhenQrEmpty?: boolean;
 }) {
   const display = value?.trim() ? value : "";
+  if (hideWhenQrEmpty && !display) return null;
   return (
     <div className="rounded-2xl bg-black/40 p-4 ring-1 ring-white/10 backdrop-blur">
       <div className="text-sm font-semibold text-green-200">{label}</div>
@@ -96,6 +99,8 @@ export function PlantPage() {
   }, []);
 
   const routeNumber = Number(id ?? "1");
+  const location = useLocation();
+  const isQrView = new URLSearchParams(location.search).has("qr");
 
   const currentIndex = useMemo(() => {
     const idx = orderedPlants.findIndex(
@@ -156,7 +161,6 @@ export function PlantPage() {
 
         <nav className="flex items-center gap-4 text-white/80">
           <Link className="hover:text-white" to="/">Home</Link>
-          <Link className="hover:text-white" to="/indigenous-seasons">Indigenous Seasons</Link>
           <Link className="hover:text-white" to="/about">About</Link>
         </nav>
       </header>
@@ -216,37 +220,37 @@ export function PlantPage() {
 
         {/* Fields */}
         <div className="grid gap-4 md:grid-cols-2">
-          <Field label="Family" value={plant.family} />
-          <Field label="Life Cycle" value={plant.lifeCycle} />
+          <Field label="Family" value={plant.family} hideWhenQrEmpty={isQrView} />
+          <Field label="Life Cycle" value={plant.lifeCycle} hideWhenQrEmpty={isQrView} />
 
-          <Field label="Habit / Growth Characteristics" value={plant.habitGrowthCharacteristics} />
-          <Field label="Identifying Characteristics" value={plant.identifyingCharacteristics} />
+          <Field label="Habit / Growth Characteristics" value={plant.habitGrowthCharacteristics} hideWhenQrEmpty={isQrView} />
+          <Field label="Identifying Characteristics" value={plant.identifyingCharacteristics} hideWhenQrEmpty={isQrView} />
 
-          <Field label="Leaves / Stems / Meristems" value={plant.leavesStemsMemristems} />
-          <Field label="Flowers" value={plant.flowers} />
+          <Field label="Leaves / Stems / Meristems" value={plant.leavesStemsMemristems} hideWhenQrEmpty={isQrView} />
+          <Field label="Flowers" value={plant.flowers} hideWhenQrEmpty={isQrView} />
 
-          <Field label="Flowering Time / Season" value={plant.floweringTimeSeason} />
-          <Field label="Fruit / Seed" value={plant.fruitSeed} />
+          <Field label="Flowering Time / Season" value={plant.floweringTimeSeason} hideWhenQrEmpty={isQrView} />
+          <Field label="Fruit / Seed" value={plant.fruitSeed} hideWhenQrEmpty={isQrView} />
 
-          <Field label="Seed Collection Time / Season" value={plant.seedCollectionTimeSeason} />
-          <Field label="Additional Propagation Requirements" value={plant.additionalPropagationRequirements} />
+          <Field label="Seed Collection Time / Season" value={plant.seedCollectionTimeSeason} hideWhenQrEmpty={isQrView} />
+          <Field label="Additional Propagation Requirements" value={plant.additionalPropagationRequirements} hideWhenQrEmpty={isQrView} />
 
-          <Field label="Trunk" value={plant.trunk} />
-          <Field label="Root System" value={plant.rootSystem} />
+          <Field label="Trunk" value={plant.trunk} hideWhenQrEmpty={isQrView} />
+          <Field label="Root System" value={plant.rootSystem} hideWhenQrEmpty={isQrView} />
 
-          <Field label="Vascular System" value={plant.vascularSystem} />
-          <Field label="Additional Information" value={plant.additionalInformation} />
+          <Field label="Vascular System" value={plant.vascularSystem} hideWhenQrEmpty={isQrView} />
+          <Field label="Additional Information" value={plant.additionalInformation} hideWhenQrEmpty={isQrView} />
 
-          <Field label="Spotting Characteristics" value={plant.spottingCharacteristics} />
-          <Field label="Family Level" value={plant.familyLevel} />
+          <Field label="Spotting Characteristics" value={plant.spottingCharacteristics} hideWhenQrEmpty={isQrView} />
+          <Field label="Family Level" value={plant.familyLevel} hideWhenQrEmpty={isQrView} />
 
-          <Field label="Cultural Information and Uses" value={plant.culturalInformationAndUses} />
-          <Field label="References" value={plant.references} />
+          <Field label="Cultural Information and Uses" value={plant.culturalInformationAndUses} hideWhenQrEmpty={isQrView} />
+          <Field label="References" value={plant.references} hideWhenQrEmpty={isQrView} />
 
-          <Field label="Horticultural / Landscape Info" value={plant.horticulturalLandscapeInfo} />
-          <Field label="Ethnobotanical Information / Uses" value={plant.ethnobotanicalInformationUses} />
+          <Field label="Horticultural / Landscape Info" value={plant.horticulturalLandscapeInfo} hideWhenQrEmpty={isQrView} />
+          <Field label="Ethnobotanical Information / Uses" value={plant.ethnobotanicalInformationUses} hideWhenQrEmpty={isQrView} />
 
-          <Field label="Indigenous Season" value={plant.indigenousSeason} />
+          <Field label="Indigenous Season" value={plant.indigenousSeason} hideWhenQrEmpty={isQrView} />
           {/* <Field label="Student" value={`${plant.studentName}${plant.studentId ? ` (${plant.studentId})` : ""}`.trim()} /> 
 
           <Field label="Created At" value={plant.createdAt} />
