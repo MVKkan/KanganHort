@@ -1,7 +1,7 @@
 // C:/Users/kym/react-vite-Hort2.6/src/pages/plants/PlantPage.tsx
 import { SITE_NAME } from "../../config/site";
 import { useMemo } from "react";
-import { Link, useNavigate, useParams, useLocation } from "react-router-dom";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import { Leaf, QrCode, ChevronLeft, ChevronRight } from "lucide-react";
 import { BackButton } from "../../components/BackButton";
 
@@ -159,10 +159,7 @@ export function PlantPage() {
           <span className="font-bold">{SITE_NAME}</span>
         </div>
 
-        <nav className="flex items-center gap-4 text-white/80">
-          <Link className="hover:text-white" to="/">Home</Link>
-          <Link className="hover:text-white" to="/about">About</Link>
-        </nav>
+
       </header>
 
       <div className="relative mx-auto w-full max-w-5xl px-4 pb-10">
