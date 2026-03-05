@@ -1,7 +1,7 @@
 // C:/Users/kym/react-vite-Hort2.6/src/pages/plants/PlantPage.tsx
 import { SITE_NAME } from "../../config/site";
 import { useMemo } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Leaf, QrCode, ChevronLeft, ChevronRight } from "lucide-react";
 import { BackButton } from "../../components/BackButton";
 
@@ -97,6 +97,7 @@ export function PlantPage() {
 
   const routeNumber = Number(id ?? "1");
 
+
   const currentIndex = useMemo(() => {
     const idx = orderedPlants.findIndex(
       (p) => (getPlantNumber(p.id) ?? 0) === routeNumber
@@ -154,11 +155,7 @@ export function PlantPage() {
           <span className="font-bold">{SITE_NAME}</span>
         </div>
 
-        <nav className="flex items-center gap-4 text-white/80">
-          <Link className="hover:text-white" to="/">Home</Link>
-          <Link className="hover:text-white" to="/indigenous-seasons">Indigenous Seasons</Link>
-          <Link className="hover:text-white" to="/about">About</Link>
-        </nav>
+
       </header>
 
       <div className="relative mx-auto w-full max-w-5xl px-4 pb-10">
@@ -216,37 +213,69 @@ export function PlantPage() {
 
         {/* Fields */}
         <div className="grid gap-4 md:grid-cols-2">
-          <Field label="Family" value={plant.family} />
-          <Field label="Life Cycle" value={plant.lifeCycle} />
-
-          <Field label="Habit / Growth Characteristics" value={plant.habitGrowthCharacteristics} />
-          <Field label="Identifying Characteristics" value={plant.identifyingCharacteristics} />
-
-          <Field label="Leaves / Stems / Meristems" value={plant.leavesStemsMemristems} />
-          <Field label="Flowers" value={plant.flowers} />
-
-          <Field label="Flowering Time / Season" value={plant.floweringTimeSeason} />
-          <Field label="Fruit / Seed" value={plant.fruitSeed} />
-
-          <Field label="Seed Collection Time / Season" value={plant.seedCollectionTimeSeason} />
-          <Field label="Additional Propagation Requirements" value={plant.additionalPropagationRequirements} />
-
-          <Field label="Trunk" value={plant.trunk} />
-          <Field label="Root System" value={plant.rootSystem} />
-
-          <Field label="Vascular System" value={plant.vascularSystem} />
-          <Field label="Additional Information" value={plant.additionalInformation} />
-
-          <Field label="Spotting Characteristics" value={plant.spottingCharacteristics} />
-          <Field label="Family Level" value={plant.familyLevel} />
-
-          <Field label="Cultural Information and Uses" value={plant.culturalInformationAndUses} />
-          <Field label="References" value={plant.references} />
-
-          <Field label="Horticultural / Landscape Info" value={plant.horticulturalLandscapeInfo} />
-          <Field label="Ethnobotanical Information / Uses" value={plant.ethnobotanicalInformationUses} />
-
-          <Field label="Indigenous Season" value={plant.indigenousSeason} />
+          {plant.family.trim() && (
+            <Field label="Family" value={plant.family}  />
+          )}
+          {plant.lifeCycle.trim() && (
+            <Field label="Life Cycle" value={plant.lifeCycle}  />
+          )}
+          {plant.habitGrowthCharacteristics.trim() && (
+            <Field label="Habit / Growth Characteristics" value={plant.habitGrowthCharacteristics}  />
+          )}
+          {plant.identifyingCharacteristics.trim() && (
+            <Field label="Identifying Characteristics" value={plant.identifyingCharacteristics}  />
+          )}
+          {plant.leavesStemsMemristems.trim() && (
+            <Field label="Leaves / Stems / Meristems" value={plant.leavesStemsMemristems}  />
+          )}
+          {plant.flowers.trim() && (
+            <Field label="Flowers" value={plant.flowers}  />
+          )}
+          {plant.floweringTimeSeason?.trim() && (
+            <Field label="Flowering Time / Season" value={plant.floweringTimeSeason}  />
+          )}
+          {plant.fruitSeed?.trim() && (
+            <Field label="Fruit / Seed" value={plant.fruitSeed}  />
+          )}
+          {plant.seedCollectionTimeSeason?.trim() && (
+            <Field label="Seed Collection Time / Season" value={plant.seedCollectionTimeSeason}  />
+          )}
+          {plant.additionalPropagationRequirements?.trim() && (
+            <Field label="Additional Propagation Requirements" value={plant.additionalPropagationRequirements}  />
+          )}
+          {plant.trunk?.trim() && (
+            <Field label="Trunk" value={plant.trunk}  />
+          )}
+          {plant.rootSystem?.trim() && (
+            <Field label="Root System" value={plant.rootSystem}  />
+          )}
+          {plant.vascularSystem?.trim() && (
+            <Field label="Vascular System" value={plant.vascularSystem}  />
+          )}
+          {plant.additionalInformation?.trim() && (
+            <Field label="Additional Information" value={plant.additionalInformation}  />
+          )}
+          {plant.spottingCharacteristics?.trim() && (
+            <Field label="Spotting Characteristics" value={plant.spottingCharacteristics}  />
+          )}
+          {plant.familyLevel?.trim() && (
+            <Field label="Family Level" value={plant.familyLevel}  />
+          )}
+          {plant.culturalInformationAndUses?.trim() && (
+            <Field label="Cultural Information and Uses" value={plant.culturalInformationAndUses}  />
+          )}
+          {plant.references?.trim() && (
+            <Field label="References" value={plant.references}  />
+          )}
+          {plant.horticulturalLandscapeInfo?.trim() && (
+            <Field label="Horticultural / Landscape Info" value={plant.horticulturalLandscapeInfo}  />
+          )}
+          {plant.ethnobotanicalInformationUses?.trim() && (
+            <Field label="Ethnobotanical Information / Uses" value={plant.ethnobotanicalInformationUses}  />
+          )}
+          {plant.indigenousSeason?.trim() && (
+            <Field label="Indigenous Season" value={plant.indigenousSeason}  />
+          )}
           {/* <Field label="Student" value={`${plant.studentName}${plant.studentId ? ` (${plant.studentId})` : ""}`.trim()} /> 
 
           <Field label="Created At" value={plant.createdAt} />

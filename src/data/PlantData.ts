@@ -246,7 +246,7 @@ export const demoPlants: PlantBio[] = [
     fruitSeed: "Small dry achenes",
     seedCollectionTimeSeason: "",
     additionalPropagationRequirements: "",
-    trunk: "",
+    trunk: "None",
     rootSystem: "Fibrous, shallow",
     vascularSystem: "Adapted to drought; efficient water retention",
     additionalInformation: "",
@@ -255,7 +255,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Excellent for native gardens, borders, habitat plantings; attracts pollinators.",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-2.jpg"
@@ -286,7 +286,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Great screening shrub; attracts honeyeaters; tolerates shade and dry soils",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-3.jpg"
@@ -317,7 +317,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Hardy landscaping plant; used in mass plantings; berries attract wildlife",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-4.jpg"
@@ -348,7 +348,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Popular indoor plant; used for screening; requires bright light and stable conditions",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-5.jpg"
@@ -379,7 +379,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Culinary herb; prefers moist soils; best grown in pots to contain spread",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-6.jpg"
@@ -410,7 +410,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Culinary herb; prefers warmth, full sun, and regular feeding",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-7.jpg"
@@ -441,7 +441,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Excellent for arches and arbours; fast growing; attracts birds and insects.",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-8.jpg"
@@ -472,7 +472,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Culinary herb; prefers rich, moist soil",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-9.jpg"
@@ -503,7 +503,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Culinary herb; preferred for cooking due to stronger flavour",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-10.jpg"
@@ -534,7 +534,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Ornamental shrub; attracts pollinators; aromatic foliage",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-11.jpg"
@@ -565,7 +565,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Popular cut flower; drought tolerant; great in native plantings",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-12.jpg"
@@ -596,7 +596,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Important native grassland species; used in restoration and ornamental plantings",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-13.jpg"
@@ -627,7 +627,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Culinary herb; medicinal uses; prefers dry, sunny conditions",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-14.jpg"
@@ -658,7 +658,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Culinary herb; drought tolerant; used in hedging",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-15.jpg"
@@ -689,7 +689,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Culinary and ornamental; great between pavers; attracts bees",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-16.jpg"
@@ -720,7 +720,7 @@ export const demoPlants: PlantBio[] = [
     culturalInformationAndUses: "Shadetolerant groundcover; excellent for understory plantings",
     references: "",
     horticulturalLandscapeInfo: "",
-    ethnobotanicalInformationUses: "C",
+    ethnobotanicalInformationUses: "",
     indigenousSeason: "",
     images: [
       "/assets/plant-17.jpg"
