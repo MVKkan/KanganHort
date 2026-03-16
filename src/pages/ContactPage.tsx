@@ -7,24 +7,46 @@ export function ContactPage() {
   useEffect(() => {
     addLog({ action: 'page_view', page: 'contact' });
   }, []);
+  
+return (
+  <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
 
-  return (
-    <div className="min-h-[calc(100vh-5rem)] bg-linear-to-b from-green-50 to-white">
-      {/* Hero */}
-      <div className="bg-green-800 text-white py-16">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="mb-6">
-            <BackButton to="/" label="Back to Home" className="text-green-100 hover:text-white" />
-          </div>
-          <div className="text-center">
-            <h1 className="text-white mb-4">Contact Us</h1>
-            <p className="text-green-100 text-xl">
-              Get in touch with Bendigo Institute Horticulture Department
-            </p>
-          </div>
+    {/* Hero Section */}
+    <div className="relative overflow-hidden bg-linear-to-br from-green-800 via-green-700 to-green-600 text-white py-12">
+
+      <div
+        className="absolute inset-0 bg-cover bg-center pointer-events-none"
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1695376686770-5480909cc1ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600)",
+        }}
+      />
+
+      <div className="absolute inset-0 bg-green-900/70 pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+        {/* Back Button */}
+        <div className="mb-6">
+          <BackButton
+            to="/"
+            label="Back to Home"
+            className="text-green-100 hover:text-white"
+          />
         </div>
-      </div>
 
+        {/* Title */}
+        <div className="text-center">
+          <h1 className="text-3xl mb-4">Contact Us</h1>
+
+          <p className="text-lg mb-8 max-w-3xl mx-auto opacity-90">
+            Bendigo TAFE&apos;s involvement in the Melbourne International Flower and Garden Show
+          </p>
+        </div>
+
+      </div>
+  
+    </div>
       {/* Main Content */}
       <div className="max-w-5xl mx-auto px-4 py-12">
         {/* Contact Cards */}

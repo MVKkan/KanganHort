@@ -13,25 +13,45 @@ export function AboutPage() {
   useEffect(() => {
     addLog({ action: 'page_view', page: 'about' });
   }, []);
+return (
+  <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
 
-  return (
-    <div className="min-h-[calc(100vh-5rem)] bg-linear-to-b from-green-50 to-white flex flex-col items-center">
-      {/* Hero */}
-      <div className="bg-green-800 text-white py-16">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="mb-6">
-            <BackButton to="/" label="Back to Home" className="font-bold text-yellow-300 hover:text-white" />
-          </div>
-          <div className="text-center">
-            <h1 className="text-white mb-4">About Our MIFGS Participation</h1>
-            <p className="text-green-100 text-xl max-w-3xl mx-auto">
-              Kangan Institute's involvement in the Melbourne International Flower and Garden Show
-            </p>
-          </div>
+    {/* Hero Section */}
+    <div className="relative overflow-hidden bg-linear-to-br from-green-800 via-green-700 to-green-600 text-white py-12">
+
+      <div
+        className="absolute inset-0 bg-cover bg-center pointer-events-none"
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1695376686770-5480909cc1ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600)",
+        }}
+      />
+
+      <div className="absolute inset-0 bg-green-900/70 pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+        {/* Back Button */}
+        <div className="mb-6">
+          <BackButton
+            to="/"
+            label="Back to Home"
+            className="font-bold text-yellow-300 hover:text-white"
+          />
         </div>
-      </div>
 
-      {/* Main Content */}
+        {/* Title */}
+        <div className="text-center">
+          <h1 className="text-4xl mb-4">About Our MIFGS Participation</h1>
+
+          <p className="text-lg mb-8 max-w-3xl mx-auto opacity-90">
+            Bendigo TAFE&apos;s involvement in the Melbourne International Flower and Garden Show
+          </p>
+        </div>
+
+      </div>
+    </div>
+        {/* Main Content */}
       <div className="max-w-5xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
@@ -106,7 +126,8 @@ export function AboutPage() {
               </div>
               <h3 className="text-gray-900">Indigenous Cultural Art</h3>
             </div>
-            <p className="text-gray-700 leading-relaxed">
+            <div className="text-gray-700 leading-relaxed space-y-2">
+              <p>
              We incorporate indigenous Australian perspectives into all aspects of our Horticulture program. 
              The sculpture face in this exhibit was hand crafted by a student in our Cultural Arts program. 
              <p>Cultural Artist: Kellie Jones</p>
@@ -205,6 +226,7 @@ export function AboutPage() {
             <div>• Urban Greening Projects</div>
           </div>
         </div>
+      </div>  
               {/* CTA + Contact */}
       <div className="bg-linear-to-r from-green-700 to-green-600 text-white py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -301,6 +323,7 @@ export function AboutPage() {
       {/* end CTA */}
 
       </div>
+   
     </div>
   );
 }
