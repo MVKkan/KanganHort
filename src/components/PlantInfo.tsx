@@ -60,8 +60,12 @@ export function PlantInfo({ plant, onReset }: PlantInfoProps) {
             value={plant.leaves} 
             icon={<Leaf className="w-5 h-5" />}
           />
+          {plant.stem?.trim() && (
           <InfoField label="Stem" value={plant.stem} />
+          )}
+          {plant.meristems?.trim() && (
           <InfoField label="Meristems" value={plant.meristems} />
+          )}
           <InfoField 
             label="Flower" 
             value={plant.flower} 

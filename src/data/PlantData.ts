@@ -99,6 +99,7 @@ export function plantBioToView(p: PlantBio): PlantView {
     leaves,
     stem,
     meristems,
+  
 
     flower: p.flowers,
     flowerSeason: p.floweringTimeSeason,
@@ -207,8 +208,7 @@ export const demoPlants: PlantBio[] = [
     habitGrowthCharacteristics: "Perennial herb with upright flowering stems",
     lifeCycle: "Perennial",
     identifyingCharacteristics: "Distinctive fuzzy tubular flowers resembling a kangaroo paw; fan shaped leaf clumps",
-    leavesStemsMemristems:
-      "Leaves: Linear, sword-shaped\nStem: Unbranched flowering stems\nMeristems: Apical for flowers, basal for leaf growth",
+    leavesStemsMemristems: "Leaves: Linear, sword-shaped\nStem: Unbranched flowering stems\nMeristems: Apical for flowers, basal for leaf growth",
     flowers: "Tubular red and green flowers covered in fine hairs",
     floweringTimeSeason: "Poorneet (September - October)",
     fruitSeed: "Capsule containing black seeds",

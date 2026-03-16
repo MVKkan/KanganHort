@@ -52,9 +52,9 @@ export function HomePage() {
   const currentPlant: PlantView | null = currentPlantBio ? plantBioToView(currentPlantBio) : null;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-green-800 via-green-700 to-green-600 text-white py-20">
+      <div className="relative overflow-hidden bg-linear-to-br from-green-800 via-green-700 to-green-600 text-white py-20">
         <div
           className="absolute inset-0 bg-cover bg-center pointer-events-none"
           style={{
@@ -74,11 +74,11 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-green-900 to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-2 bg-linear-to-r from-transparent via-green-900 to-transparent pointer-events-none" />
       </div>
 
       {/* Plant Bio Display Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white rounded-lg shadow-lg -mt-8 relative z-10 mb-12 mx-4 sm:mx-6 lg:mx-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white rounded-lg shadow-lg -mt-8 relative z-10 mb-12">
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Sprout className="h-10 w-10 text-green-700" />
@@ -179,7 +179,7 @@ export function HomePage() {
                     "url(https://i.pinimg.com/originals/98/ee/4b/98ee4b9cd00680a227d5bc67a845bbff.jpg)",
                 }}
               />
-              <div className="absolute inset-0 min-h-full bg-gradient-to-br from-amber-900/50 via-orange-900/45 to-red-900/50 backdrop-blur-[1px] pointer-events-none" />
+              <div className="absolute inset-0 min-h-full bg-linear-to-br from-amber-900/50 via-orange-900/45 to-red-900/50 backdrop-blur-[1px] pointer-events-none" />
 
               <div className="relative z-10 p-8">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -224,7 +224,7 @@ export function HomePage() {
                   ))}
                 </div>
 
-    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-[calc(100vh-5rem)] bg-linear-to-b from-green-50 to-white">
       {/* Hero */}
       <div className="relative bg-green-800 text-white py-16 overflow-hidden">
         {/* Background Image */}
@@ -366,7 +366,7 @@ export function HomePage() {
                   </p>
 
                   <div className="bg-white p-4 rounded-lg flex items-start gap-3">
-                    <QrCode className="h-12 w-12 text-green-700 flex-shrink-0" />
+                    <QrCode className="h-12 w-12 text-green-700 shrink-0" />
                     <div>
                       <p className="text-green-900 mb-2">Try it now!</p>
                       <p className="text-gray-700 text-sm">
@@ -391,7 +391,7 @@ export function HomePage() {
           </div>
         </div>
 {/* About Kangan */}
-<div className="mb-4 bg-gradient-to-br from-green-50 to-green-100 rounded-lg shadow-md mt-2 relative overflow-hidden py-8 px-8">
+<div className="mb-4 bg-linear-to-br from-green-50 to-green-100 rounded-lg shadow-md mt-2 relative overflow-hidden py-8 px-8">
   <div className="absolute top-0 right-0 opacity-10 pointer-events-none">
     <Sprout className="h-48 w-48 text-green-800" />
   </div>
@@ -421,19 +421,19 @@ export function HomePage() {
         <h3 className="text-xl text-green-900 mb-4">Why Choose Kangan?</h3>
         <ul className="space-y-3">
           <li className="flex items-start gap-3">
-            <Sprout className="h-5 w-5 text-green-700 flex-shrink-0 mt-1" />
+            <Sprout className="h-5 w-5 text-green-700 shrink-0 mt-1" />
             <span className="text-gray-700">Industry-standard facilities and equipment</span>
           </li>
           <li className="flex items-start gap-3">
-            <Sprout className="h-5 w-5 text-green-700 flex-shrink-0 mt-1" />
+            <Sprout className="h-5 w-5 text-green-700 shrink-0 mt-1" />
             <span className="text-gray-700">Experienced instructors with industry connections</span>
           </li>
           <li className="flex items-start gap-3">
-            <Sprout className="h-5 w-5 text-green-700 flex-shrink-0 mt-1" />
+            <Sprout className="h-5 w-5 text-green-700 shrink-0 mt-1" />
             <span className="text-gray-700">Hands-on learning with native Australian plants</span>
           </li>
           <li className="flex items-start gap-3">
-            <Sprout className="h-5 w-5 text-green-700 flex-shrink-0 mt-1" />
+            <Sprout className="h-5 w-5 text-green-700 shrink-0 mt-1" />
             <span className="text-gray-700">Focus on indigenous seasonal knowledge</span>
           </li>
         </ul>

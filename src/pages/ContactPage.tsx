@@ -9,7 +9,7 @@ export function ContactPage() {
   }, []);
 
   return (
-    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-[calc(100vh-5rem)] bg-linear-to-b from-green-50 to-white">
       {/* Hero */}
       <div className="bg-green-800 text-white py-16">
         <div className="max-w-5xl mx-auto px-4">
@@ -19,7 +19,7 @@ export function ContactPage() {
           <div className="text-center">
             <h1 className="text-white mb-4">Contact Us</h1>
             <p className="text-green-100 text-xl">
-              Get in touch with Kangan Institute Horticulture Department
+              Get in touch with Bendigo Institute Horticulture Department
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ export function ContactPage() {
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-green-100 rounded-lg flex-shrink-0">
+                <div className="p-3 bg-green-100 rounded-lg shrink-0">
                   <Phone className="w-6 h-6 text-green-700" />
                 </div>
                 <div>
@@ -50,7 +50,7 @@ export function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-green-100 rounded-lg flex-shrink-0">
+                <div className="p-3 bg-green-100 rounded-lg shrink-0">
                   <Mail className="w-6 h-6 text-green-700" />
                 </div>
                 <div>
@@ -65,7 +65,7 @@ export function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-green-100 rounded-lg flex-shrink-0">
+                <div className="p-3 bg-green-100 rounded-lg shrink-0">
                   <Globe className="w-6 h-6 text-green-700" />
                 </div>
                 <div>
@@ -82,7 +82,7 @@ export function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-green-100 rounded-lg flex-shrink-0">
+                <div className="p-3 bg-green-100 rounded-lg shrink-0">
                   <Clock className="w-6 h-6 text-green-700" />
                 </div>
                 <div>
@@ -225,28 +225,28 @@ export function ContactPage() {
               </p>
               <div className="space-y-3">
                 <a 
-                  href="https://www.facebook.com/KanganInstitute" 
+                  href="https://www.facebook.com/BendigoTAFEonline/photos/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-green-700 hover:text-green-800 transition-colors"
                 >
-                  Facebook: @KanganInstitute
+                  Facebook: BendigoTAFEonline
                 </a>
                 <a 
-                  href="https://www.instagram.com/kangan_institute" 
+                  href="https://www.instagram.com/bendigo.tafe/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-green-700 hover:text-green-800 transition-colors"
                 >
-                  Instagram: @kangan_institute
+                  Instagram: @bendigo.tafe
                 </a>
                 <a 
-                  href="https://www.linkedin.com/school/kangan-institute" 
+                  href="https://au.linkedin.com/company/bendigo-regional-institute-of-tafe" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-green-700 hover:text-green-800 transition-colors"
                 >
-                  LinkedIn: Kangan Institute
+                  LinkedIn: Bendigo TAFE
                 </a>
               </div>
             </div>

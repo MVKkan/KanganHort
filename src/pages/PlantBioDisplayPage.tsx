@@ -44,7 +44,7 @@ export function PlantBioDisplayPage() {
 
   if (!plant) {
     return (
-      <div className="min-h-[calc(100vh-5rem)] px-4 py-12">
+      <div className="min-h-[calc(100vh-5rem)] flex items-center justify-center px-4">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl p-8 text-center">
             <AlertCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />

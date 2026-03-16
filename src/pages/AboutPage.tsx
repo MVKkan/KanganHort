@@ -15,7 +15,7 @@ export function AboutPage() {
   }, []);
 
   return (
-    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-[calc(100vh-5rem)] bg-linear-to-b from-green-50 to-white flex flex-col items-center">
       {/* Hero */}
       <div className="bg-green-800 text-white py-16">
         <div className="max-w-5xl mx-auto px-4">
@@ -36,7 +36,7 @@ export function AboutPage() {
         {/* Introduction */}
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
           <div className="flex items-start gap-4">
-            <div className="p-3 bg-green-100 rounded-lg flex-shrink-0">
+            <div className="p-3 bg-green-100 rounded-lg shrink-0">
               <Award className="w-8 h-8 text-green-700" />
             </div>
             <div>
@@ -104,12 +104,20 @@ export function AboutPage() {
               <div className="p-3 bg-yellow-100 rounded-lg">
                 <BookOpen className="w-6 h-6 text-yellow-700" />
               </div>
-              <h3 className="text-gray-900">Indigenous Knowledge</h3>
+              <h3 className="text-gray-900">Indigenous Cultural Art</h3>
             </div>
             <p className="text-gray-700 leading-relaxed">
-              We incorporate indigenous Australian perspectives on seasonal patterns and plant management. 
-              Students learn to classify plants according to the six traditional seasons, honoring the deep 
-              connection between indigenous culture and the land.
+             We incorporate indigenous Australian perspectives into all aspects of our Horticulture program. 
+             The sculpture face in this exhibit was hand crafted by a student in our Cultural Arts program. 
+             <p>Cultural Artist: Kellie Jones</p>
+             <p>Country: Dunghutti</p>
+             <p>Course: Certificate III in Cultural Arts</p>
+             <p>Bendigo Kangan Institute</p> 
+             At a certificate III level students learn the identification and lifecycle of plant characteristics
+             through to production management systems according to the Kulin Nation 6 seasons. 
+             Honoring the deep connection between indigenous culture and caring for Country. 
+             Kellie's sculpture pays tribute to this connection.
+
             </p>
           </div>
         </div>
@@ -177,7 +185,7 @@ export function AboutPage() {
         </div>
 
         {/* About Kangan */}
-        <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl shadow-lg p-8 mb-12 border-2 border-green-200">
+        <div className="bg-linear-to-br from-green-50 to-blue-50 rounded-2xl shadow-lg p-8 mb-12 border-2 border-green-200">
           <h2 className="text-green-800 mb-4">About Kangan Institute</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Kangan Institute is one of Melbourne's largest training providers, with a proud history spanning 
@@ -198,7 +206,7 @@ export function AboutPage() {
           </div>
         </div>
               {/* CTA + Contact */}
-      <div className="bg-gradient-to-r from-green-700 to-green-600 text-white py-12">
+      <div className="bg-linear-to-r from-green-700 to-green-600 text-white py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl mb-4">Join Our Horticulture Program</h2>
@@ -223,7 +231,7 @@ export function AboutPage() {
                 </p>
 
                 <p className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 flex-shrink-0 mt-1" />
+                  <MapPin className="h-5 w-5 shrink-0 mt-1" />
                   <span>
                     Multiple campuses across Melbourne <br />
                     <Link to="/contact" className="underline hover:text-white">
@@ -278,12 +286,7 @@ export function AboutPage() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-4 mt-8">
-                <Link
-                  to="/about"
-                  className="bg-green-700 text-white px-8 py-3 rounded-lg hover:bg-green-800 transition-colors"
-                >
-                  Learn More
-                </Link>
+
                 <Link
                   to="/contact"
                   className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-black transition-colors"

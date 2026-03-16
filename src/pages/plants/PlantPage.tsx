@@ -134,7 +134,7 @@ export function PlantPage() {
   }
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-green-950 via-green-900 to-black">
+    <div className="relative min-h-screen overflow-hidden bg-linear-to-b from-green-950 via-green-900 to-black">
       {/* faded background image */}
       <div className="pointer-events-none absolute inset-0">
         <img
