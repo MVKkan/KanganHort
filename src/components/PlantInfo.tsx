@@ -54,17 +54,21 @@ export function PlantInfo({ plant, onReset }: PlantInfoProps) {
           </p>
         </div>
 
-        <dl className="space-y-1">
-          <InfoField 
-            label="Leaves" 
-            value={plant.leaves} 
+<dl className="space-y-1">
+          <InfoField
+            label="Leaves"
+            value={plant.leaves}
             icon={<Leaf className="w-5 h-5" />}
           />
+          {plant.stem?.trim() && (
           <InfoField label="Stem" value={plant.stem} />
+          )}
+          {plant.meristems?.trim() && (
           <InfoField label="Meristems" value={plant.meristems} />
-          <InfoField 
-            label="Flower" 
-            value={plant.flower} 
+          )}
+          <InfoField
+            label="Flower"
+            value={plant.flower}
             icon={<Flower className="w-5 h-5" />}
           />
           <InfoField 
