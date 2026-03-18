@@ -15,21 +15,43 @@ export function AboutPage() {
   }, []);
 
   return (
-    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-b from-green-50 to-white">
-      {/* Hero */}
-      <div className="bg-green-800 text-white py-16">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="mb-6">
-            <BackButton to="/" label="Back to Home" className="font-bold text-yellow-300 hover:text-white" />
-          </div>
-          <div className="text-center">
-            <h1 className="text-white mb-4">About Our MIFGS Participation</h1>
-            <p className="text-green-100 text-xl max-w-3xl mx-auto">
-              Bendigo Tafe's involvement in the Melbourne International Flower and Garden Show
-            </p>
-          </div>
+  <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
+
+    {/* Hero Section */}
+    <div className="relative overflow-hidden bg-linear-to-br from-green-800 via-green-700 to-green-600 text-white py-20">
+
+      <div
+        className="absolute inset-0 bg-cover bg-center pointer-events-none"
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1695376686770-5480909cc1ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600)",
+        }}
+      />
+
+      <div className="absolute inset-0 bg-green-900/70 pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+        {/* Back Button */}
+        <div className="mb-6">
+          <BackButton
+            to="/"
+            label="Back to Home"
+            className="font-bold text-yellow-300 hover:text-white"
+          />
         </div>
+
+        {/* Title */}
+        <div className="text-center">
+          <h1 className="text-5xl mb-4">About Our MIFGS Participation</h1>
+
+          <p className="text-lg mb-8 max-w-3xl mx-auto opacity-90">
+            Bendigo TAFE&apos;s involvement in the Melbourne International Flower and Garden Show
+          </p>
+        </div>
+
       </div>
+    </div>
 
       {/* Main Content */}
       <div className="max-w-5xl mx-auto px-4 py-12">
@@ -104,12 +126,21 @@ export function AboutPage() {
               <div className="p-3 bg-yellow-100 rounded-lg">
                 <BookOpen className="w-6 h-6 text-yellow-700" />
               </div>
-              <h3 className="text-gray-900">Indigenous Knowledge</h3>
+              <h3 className="text-gray-900">Indigenous Cultural Art</h3>
             </div>
-            <p className="text-gray-700 leading-relaxed">
-              We incorporate indigenous Australian perspectives on seasonal patterns and plant management. 
-              Students learn to classify plants according to the six traditional seasons, honoring the deep 
-              connection between indigenous culture and the land.
+            <div className="text-gray-700 leading-relaxed space-y-2">
+              <p>
+             We incorporate indigenous Australian perspectives into all aspects of our Horticulture program.
+             The sculpture face in this exhibit was hand crafted by a student in our Cultural Arts program.
+             <p>Cultural Artist: Kellie Jones</p>
+             <p>Country: Dunghutti</p>
+             <p>Course: Certificate III in Cultural Arts</p>
+             <p>Bendigo Kangan Institute</p>
+             At a certificate III level students learn the identification and lifecycle of plant characteristics
+             through to production management systems according to the Kulin Nation 6 seasons.
+             Honoring the deep connection between indigenous culture and caring for Country.
+             Kellie's sculpture pays tribute to this connection.
+ 
             </p>
           </div>
         </div>
@@ -303,6 +334,7 @@ export function AboutPage() {
         </div>
         {/* end CTA */}
       </div>
+    </div>
     </div>
   );
   
