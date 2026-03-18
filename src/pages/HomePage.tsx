@@ -77,7 +77,7 @@ export function HomePage() {
       </div>
 
       {/* Plant Bio Display Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white rounded-lg shadow-lg -mt-8 relative z-10 mb-12 mx-4 sm:mx-6 lg:mx-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white rounded-lg shadow-lg -mt-8 relative z-10 mb-12">
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Sprout className="h-10 w-10 text-green-700" />
